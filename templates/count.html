@@ -1,0 +1,19 @@
+<h1>Counted</h1>
+<a href="{% url "home" %}">back to homepage</a>
+<br>
+<a href="{% url "about" %}">Go to about page</a>
+<br>
+<h2>Your Text</h2>
+Display text = {{text}}
+<br>
+<h2>Your Items</h2>
+Total items = {{lst}}
+<br>
+<h2>Word Counts</h2>
+Total words = {{words}}
+<br><br><br><br><br><br>
+<h3>Word Dictionary</h3>
+{% for word,value in dict_item %}
+{{word}} = {{value}}
+<br>
+{% endfor %}
